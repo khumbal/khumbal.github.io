@@ -16,7 +16,7 @@
     .repo-list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
     }
     .repo {
       background-color: white;
@@ -41,7 +41,16 @@
 <body>
   <h1>My GitHub Repositories</h1>
   <div class="repo-list" id="repoList"></div>
-
+<div style="
+    height: fit-content;
+    margin: 2em auto 1em;
+    width: fit-content;
+    width: 80%;
+    max-width: 600px;
+    min-width: 430px;
+    border-radius: 5px;
+    overflow: hidden;
+"><iframe src="https://github.com/sponsors/khumbal/card" title="Sponsor khumbal" height="150" width="100%" style="border: 0;"></iframe></div>
   <script>
     // Fetch the repositories from GitHub API
     fetch('https://api.github.com/users/khumbal/repos')
